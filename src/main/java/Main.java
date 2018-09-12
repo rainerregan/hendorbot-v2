@@ -30,6 +30,9 @@ public class Main extends ListenerAdapter {
         if (event.getMessage().getContentRaw().equals("!ping")){
             event.getChannel().sendMessage("Pong!").queue();
         }
+        if (event.getMessage().getContentRaw().equals("Halo ndor") || event.getMessage().getContentRaw().equals("halo ndor")){
+            event.getChannel().sendMessage("HALO BOSQ!").queue();
+        }
 
     }
 }
